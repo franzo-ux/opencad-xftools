@@ -9,11 +9,11 @@ An [OpenCADStudio](https://github.com/HakanSeven12/OpenCADStudio) plugin that pl
 
 ## Install
 
-This plugin is built for OpenCADStudio `v2026.38` and Rust `1.98.1`.
+This plugin is built for OpenCADStudio `v2026.39` and Rust `1.98.1`.
 
 ### Windows release
 
-Download `opencad.point_numbering-windows-x86_64.dll` and `plugin.toml` from the [latest release](https://github.com/franzo-ux/opencad-point-numbering/releases/latest), then copy both files to:
+Download `opencad.point_numbering-windows-x86_64.dll` and `plugin.toml` from the [latest release](https://github.com/franzo-ux/opencad-xftools/releases/latest), then copy both files to:
 
 ```text
 %APPDATA%\OpenCADStudio\plugins\opencad.point_numbering\
@@ -23,7 +23,7 @@ Restart OpenCADStudio.
 
 ### macOS (Apple Silicon)
 
-Download `opencad.point_numbering-macos-aarch64.dylib` and `plugin.toml` from the [latest release](https://github.com/franzo-ux/opencad-point-numbering/releases/latest), then copy both files to:
+Download `opencad.point_numbering-macos-aarch64.dylib` and `plugin.toml` from the [latest release](https://github.com/franzo-ux/opencad-xftools/releases/latest), then copy both files to:
 
 ```text
 ~/Library/Application Support/OpenCADStudio/plugins/opencad.point_numbering/
@@ -33,7 +33,7 @@ Restart OpenCADStudio.
 
 ### Linux (x86_64) release
 
-Download `opencad.point_numbering-linux-x86_64.so` and `plugin.toml` from the [latest release](https://github.com/franzo-ux/opencad-point-numbering/releases/latest), then copy both files to:
+Download `opencad.point_numbering-linux-x86_64.so` and `plugin.toml` from the [latest release](https://github.com/franzo-ux/opencad-xftools/releases/latest), then copy both files to:
 
 ```text
 ~/.config/OpenCADStudio/plugins/opencad.point_numbering/

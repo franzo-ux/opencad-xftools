@@ -7,7 +7,7 @@ use std::{
 use std::process::Command;
 
 use ocs_plugin_api::host::{
-    acadrust::{
+    codec::{
         entities::{Circle, LwPolyline, Point, Text, UnderlayType},
         objects::ObjectType,
         types::{Handle, Vector2, Vector3},

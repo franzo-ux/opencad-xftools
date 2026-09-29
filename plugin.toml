@@ -1,14 +1,14 @@
 [plugin]
 id = "opencad.point_numbering"
 name = "xfTools"
-version = "0.3.0"
+version = "0.3.1"
 description = "Place incrementing labels by clicking points in the drawing."
 author = "CAD Tools"
 license = "GPL-3.0-only"
 
 [opencad]
 api_version = 5
-acadrust_source = "git+https://github.com/HakanSeven12/cadcodec.git?rev=5b682ed#5b682ed66ea2c89be8142c8dd83d83774fc3de08"
+acadrust_source = "git+https://github.com/HakanSeven12/opencadcodec.git?rev=42b44d2#42b44d2343e9925cff8a0c9e94c1d1c5ae8541c7"
 rustc_version = "rustc 1.98.1 (48a229cea 2026-09-01)"
 ribbon_order = 60
 command_prefixes = ["PNUM", "PDFREFS", "TFRAME"]

@@ -3,29 +3,6 @@
 version = 4
 
 [[package]]
-name = "acadrust"
-version = "0.5.5"
-source = "git+https://github.com/HakanSeven12/cadcodec.git?rev=5b682ed#5b682ed66ea2c89be8142c8dd83d83774fc3de08"
-dependencies = [
- "ahash 0.8.12",
- "anyhow",
- "bitflags",
- "byteorder",
- "encoding_rs",
- "flate2",
- "indexmap",
- "itoa",
- "memmap2",
- "nom 7.1.3",
- "once_cell",
- "rayon",
- "ryu",
- "serde",
- "thiserror 1.0.69",
- "web-time",
-]
-
-[[package]]
 name = "adler2"
 version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -870,15 +847,15 @@ dependencies = [
 [[package]]
 name = "ocs_plugin_api"
 version = "0.2.1"
-source = "git+https://github.com/HakanSeven12/OpenCADStudio?rev=0d023d267bc5b7afeca3b54e98875b0efd4f3926#0d023d267bc5b7afeca3b54e98875b0efd4f3926"
+source = "git+https://github.com/HakanSeven12/OpenCADStudio?rev=c623a016956e5c397351660b91f04bb504bab20d#c623a016956e5c397351660b91f04bb504bab20d"
 dependencies = [
- "acadrust",
  "bincode",
  "cargo-lock",
  "getrandom 0.2.17",
  "interprocess",
  "libloading",
  "memmap2",
+ "opencadcodec",
  "rkyv",
  "serde",
  "serde-reflection",
@@ -895,10 +872,33 @@ checksum = "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
 
 [[package]]
 name = "opencad-point-numbering"
-version = "0.3.0"
+version = "0.3.1"
 dependencies = [
  "lopdf",
  "ocs_plugin_api",
+]
+
+[[package]]
+name = "opencadcodec"
+version = "0.5.5"
+source = "git+https://github.com/HakanSeven12/opencadcodec.git?rev=42b44d2#42b44d2343e9925cff8a0c9e94c1d1c5ae8541c7"
+dependencies = [
+ "ahash 0.8.12",
+ "anyhow",
+ "bitflags",
+ "byteorder",
+ "encoding_rs",
+ "flate2",
+ "indexmap",
+ "itoa",
+ "memmap2",
+ "nom 7.1.3",
+ "once_cell",
+ "rayon",
+ "ryu",
+ "serde",
+ "thiserror 1.0.69",
+ "web-time",
 ]
 
 [[package]]

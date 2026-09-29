@@ -1,6 +1,6 @@
 [package]
 name = "opencad-point-numbering"
-version = "0.3.0"
+version = "0.3.1"
 edition = "2021"
 description = "Interactive point numbering for OpenCADStudio."
 license = "GPL-3.0-only"
@@ -10,4 +10,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 lopdf = "0.45.0"
-ocs_plugin_api = { git = "https://github.com/HakanSeven12/OpenCADStudio", rev = "0d023d267bc5b7afeca3b54e98875b0efd4f3926", features = ["host"] }
+ocs_plugin_api = { git = "https://github.com/HakanSeven12/OpenCADStudio", rev = "c623a016956e5c397351660b91f04bb504bab20d", features = ["host"] }

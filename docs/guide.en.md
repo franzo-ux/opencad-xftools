@@ -8,7 +8,7 @@ The plugin places numeric text labels in a drawing. Once started, click a vertex
 
 ## First installation on Windows
 
-1. Open the [latest release](https://github.com/franzo-ux/opencad-point-numbering/releases/latest).
+1. Open the [latest release](https://github.com/franzo-ux/opencad-xftools/releases/latest).
 2. Download **both** files:
    - `opencad.point_numbering-windows-x86_64.dll`
    - `plugin.toml`
@@ -26,7 +26,7 @@ After restarting, the **xfTools** ribbon tab includes a **Number points** button
 
 ## Install on macOS (Apple Silicon)
 
-1. Open the [latest release](https://github.com/franzo-ux/opencad-point-numbering/releases/latest).
+1. Open the [latest release](https://github.com/franzo-ux/opencad-xftools/releases/latest).
 2. Download `opencad.point_numbering-macos-aarch64.dylib` and `plugin.toml`.
 3. Copy both to:
 
@@ -38,7 +38,7 @@ After restarting, the **xfTools** ribbon tab includes a **Number points** button
 
 ## Install on Linux (x86_64)
 
-1. Open the [latest release](https://github.com/franzo-ux/opencad-point-numbering/releases/latest).
+1. Open the [latest release](https://github.com/franzo-ux/opencad-xftools/releases/latest).
 2. Download `opencad.point_numbering-linux-x86_64.so` and `plugin.toml`.
 3. Copy both to:
 

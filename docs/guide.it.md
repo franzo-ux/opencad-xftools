@@ -8,7 +8,7 @@ Il plugin inserisce etichette di testo numeriche nel disegno. Dopo l’avvio, fa
 
 ## Prima installazione su Windows
 
-1. Apri la [release più recente](https://github.com/franzo-ux/opencad-point-numbering/releases/latest).
+1. Apri la [release più recente](https://github.com/franzo-ux/opencad-xftools/releases/latest).
 2. Scarica **entrambi** i file:
    - `opencad.point_numbering-windows-x86_64.dll`
    - `plugin.toml`
@@ -26,7 +26,7 @@ Dopo il riavvio compare la scheda **xfTools** nel ribbon, con il pulsante **Numb
 
 ## Installazione su macOS (Apple Silicon)
 
-1. Apri la [release più recente](https://github.com/franzo-ux/opencad-point-numbering/releases/latest).
+1. Apri la [release più recente](https://github.com/franzo-ux/opencad-xftools/releases/latest).
 2. Scarica `opencad.point_numbering-macos-aarch64.dylib` e `plugin.toml`.
 3. Copia entrambi in:
 
@@ -38,7 +38,7 @@ Dopo il riavvio compare la scheda **xfTools** nel ribbon, con il pulsante **Numb
 
 ## Installazione su Linux (x86_64)
 
-1. Apri la [release più recente](https://github.com/franzo-ux/opencad-point-numbering/releases/latest).
+1. Apri la [release più recente](https://github.com/franzo-ux/opencad-xftools/releases/latest).
 2. Scarica `opencad.point_numbering-linux-x86_64.so` e `plugin.toml`.
 3. Copia entrambi in:
 
