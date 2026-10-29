@@ -9,7 +9,7 @@ An [OpenCADStudio](https://github.com/HakanSeven12/OpenCADStudio) plugin that pl
 
 ## Install
 
-This plugin is built for OpenCADStudio `v2026.39` and Rust `1.98.1`.
+This plugin is built for OpenCADStudio `v2026.43` and Rust `1.99.1`.
 
 ### Windows release
 
