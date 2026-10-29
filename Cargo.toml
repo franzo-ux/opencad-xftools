@@ -1,6 +1,6 @@
 [package]
 name = "opencad-point-numbering"
-version = "0.3.4"
+version = "0.3.5"
 edition = "2021"
 description = "Interactive point numbering for OpenCADStudio."
 license = "GPL-3.0-only"
