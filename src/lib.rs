@@ -641,10 +641,13 @@ fn show_frame_settings(settings: FrameSettings) -> Result<Option<FrameSettings>,
     let script = r#"ObjC.import('Cocoa');
 function field(value, y) { const input = $.NSTextField.alloc.initWithFrame($.NSMakeRect(175, y, 200, 24)); input.setStringValue($(value)); return input; }
 function label(text, y) { const output = $.NSTextField.alloc.initWithFrame($.NSMakeRect(0, y, 165, 24)); output.setStringValue($(text)); output.setBezeled(false); output.setDrawsBackground(false); output.setEditable(false); return output; }
+function run(argv) {
 const view = $.NSView.alloc.initWithFrame($.NSMakeRect(0, 0, 375, 180)); const names = ['Shape (Rectangle/Circle/Slot)', 'Size mode (Fit/Fixed)', 'Offset from text', 'Fixed width / diameter', 'Fixed height']; const inputs = [];
-for (let i = 0; i < names.length; i++) { const y = 150 - i * 30; const input = field(arguments[i], y); view.addSubview(label(names[i], y)); view.addSubview(input); inputs.push(input); }
+for (let i = 0; i < names.length; i++) { const y = 150 - i * 30; const input = field(argv[i], y); view.addSubview(label(names[i], y)); view.addSubview(input); inputs.push(input); }
 const alert = $.NSAlert.alloc.init; alert.messageText = 'xfTools — Enclose text'; alert.informativeText = 'Configure the frame before selecting TEXT entities.'; alert.accessoryView = view; alert.addButtonWithTitle('Apply'); alert.addButtonWithTitle('Cancel'); alert.layout();
-if (alert.runModal() == $.NSAlertFirstButtonReturn) console.log(inputs.map(input => ObjC.unwrap(input.stringValue)).join('\t'));"#;
+if (alert.runModal() == $.NSAlertFirstButtonReturn) return inputs.map(input => ObjC.unwrap(input.stringValue)).join('\t');
+return '';
+}"#;
     let output = Command::new("osascript")
         .args(["-l", "JavaScript", "-e", script])
         .args(values)
